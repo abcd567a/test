@@ -12,11 +12,11 @@ echo ""
 echo -e "\e[33mInstallation of dump1090-mut dependencies & tools completed...\e[39m"
 echo ""
 echo -e "\e[33mCLONING THE SOURCE FILES.....\e[39m"
-git clone -b unmaintained https://github.com/mutability/dump1090.git dump1090-mut
+git clone -b unmaintained https://github.com/mutability/dump1090.git dump1090-v1.15
 
 echo ""
 echo -e "\e[33mMOVING INTO CLONED DIRECTORY ....\e[39m"
-cd ${PWD}/dump1090-mut
+cd ${PWD}/dump1090-v1.15
 echo ""
 echo -e "\e[33mBUILDING DUMP1090-MUTABILITY PACKAGE ....\e[39m"
 dpkg-buildpackage -b
