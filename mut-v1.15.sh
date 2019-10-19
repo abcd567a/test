@@ -2,7 +2,7 @@
 echo -e "\e[33mupdating.....\e[39m"
 apt update
 
-echo -e "\e[33mDUMP1090-MUTABILITY\e[39m"
+echo -e "\e[33mDUMP1090-MUTABILITY ver 1.15~dev\e[39m"
 echo "Installing packages needed to build, and needed to fulfill dependencies....\e[39m"
 apt install -y git debhelper librtlsdr-dev lighttpd
 apt install -y rtl-sdr build-essential cron curl
@@ -35,10 +35,10 @@ echo -e "\e[33mConfiguring dump1090-mutability...\e[39m"
 dpkg-reconfigure dump1090-mutability
 echo ""
 echo -e "\e[32m===============\e[39m"
-echo -e "\e[32mALL DONE\e[39m"
+echo -e "\e[32mALL DONE (ver 1.15~dev)\e[39m"
 echo -e "\e[32m===============\e[39m"
 echo -e "\e[31mREBOOT YOUR COMPUTER\e[39m"
 echo -e "\e[31mREBOOT YOUR COMPUTER\e[39m"
 echo -e "\e[31mREBOOT YOUR COMPUTER\e[39m"
-echo -e "\e[33mTo configure dump1090-mutability any time use following command:\e[39m"
+echo -e "\e[33mTo configure dump1090-mutability ver 1.15~dev any time use following command:\e[39m"
 echo "  sudo dpkg-reconfigure dump1090-mutability "
