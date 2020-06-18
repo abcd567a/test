@@ -26,11 +26,11 @@ ${INSTALL_FOLDER}/modesmixer2 \${CONFIG}
 EOM
 sudo chmod +x ${SCRIPT_FILE}
 
-echo "Creating config file mm01.conf"
-CONFIG_FILE=${INSTALL_FOLDER}/mm01.conf
+echo "Creating config file 01.conf"
+CONFIG_FILE=${INSTALL_FOLDER}/01.conf
 sudo touch ${CONFIG_FILE}
 sudo chmod 777 ${CONFIG_FILE}
-echo "Writing code to config file mm01.conf"
+echo "Writing code to config file 01.conf"
 /bin/cat <<EOM >${CONFIG_FILE}
 --inConnectId 127.0.0.1:30005:ADSB
 --inConnectId 127.0.0.1:30105:MLAT
@@ -64,8 +64,8 @@ WantedBy=default.target
 EOM
 
 sudo chmod 644 ${SERVICE_FILE}
-sudo systemctl enable mm2@mm01
-sudo systemctl restart mm2@mm01
+sudo systemctl enable mm2@01
+sudo systemctl restart mm2@01
 
 echo " "
 echo " "
@@ -84,14 +84,14 @@ echo -e "\e[39m     --location xx.xxxx:yy.yyyy \e[39m"
 echo ""
 echo -e "\e[33m(Replace xx.xxxx and yy.yyyy \e[39m"
 echo -e "\e[33mby your actual latitude and longitude) \e[39m"
-echo -e "\e[33mSave (Ctrl+o) and Close (Ctrl+x) file mm2.conf \e[39m"
+echo -e "\e[33mSave (Ctrl+o) and Close (Ctrl+x) file 01.conf \e[39m"
 echo ""
 echo -e "\e[33mthen restart mm2 by following command:\e[39m"
 echo -e "\e[39m     sudo systemctl restart mm2@mm01 \e[39m"
 echo " "
 
-echo -e "\e[32mTo see status\e[39m sudo systemctl status mm2@mm01"
-echo -e "\e[32mTo restart\e[39m    sudo systemctl restart mm2@mm01"
-echo -e "\e[32mTo stop\e[39m       sudo systemctl stop mm2@mm01"
+echo -e "\e[32mTo see status\e[39m sudo systemctl status mm2@01"
+echo -e "\e[32mTo restart\e[39m    sudo systemctl restart mm2@01"
+echo -e "\e[32mTo stop\e[39m       sudo systemctl stop mm2@01"
 
 
