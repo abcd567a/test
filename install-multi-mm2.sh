@@ -87,7 +87,7 @@ echo -e "\e[33mby your actual latitude and longitude) \e[39m"
 echo -e "\e[33mSave (Ctrl+o) and Close (Ctrl+x) file mm2.conf \e[39m"
 echo ""
 echo -e "\e[33mthen restart mm2 by following command:\e[39m"
-echo -e "\e[39m     sudo systemctl restart mm2 \e[39m"
+echo -e "\e[39m     sudo systemctl restart mm2@mm01 \e[39m"
 echo " "
 
 echo -e "\e[32mTo see status\e[39m sudo systemctl status mm2@mm01"
